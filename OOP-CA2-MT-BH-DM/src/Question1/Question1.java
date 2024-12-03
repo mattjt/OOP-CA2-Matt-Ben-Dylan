@@ -12,12 +12,12 @@ public class Question1 {    // Interfaces
 
         ContainerManager manager = new ContainerManager();
 
-        Box b1 = new Box(2.0, 3.0, 4.0, 5.0);
-        Cylinder c1 = new Cylinder(5.0, 3.0, 4.0);
-        Pyramid p1 = new Pyramid(3.0, 3.0, 2.0);
-        Box b2 = new Box(2.0, 3.0, 4.0, 5.0);
-        Cylinder c2 = new Cylinder(5.0, 3.0, 4.0);
-        Pyramid p2 = new Pyramid(3.0, 3.0, 2.0);
+        Box b1 = new Box(24.0, 24.0, 24.0, 50.0);
+        Cylinder c1 = new Cylinder(50.0, 10.0, 25.0);
+        Pyramid p1 = new Pyramid(50.0, 24.0, 24.0);
+        Box b2 = new Box(10.0, 20.0, 30.0, 40.0);
+        Cylinder c2 = new Cylinder(10.0, 10.0, 20.0);
+        Pyramid p2 = new Pyramid(30.0, 30.0, 25.0);
 
         manager.add(b1);
         manager.add(c1);
@@ -25,6 +25,9 @@ public class Question1 {    // Interfaces
         manager.add(b2);
         manager.add(c2);
         manager.add(p2);
+
+        System.out.println("Box 1 minimum box volume: " + b1.rectangularVolume());
+        System.out.println("Cylinder 1 minimum box volume: " + c1.rectangularVolume());
 
         double totalWeight = manager.totalWeight();
         double totalVolume = manager.totalRectangularVolume();
