@@ -1,3 +1,5 @@
+package org.example;
+
 public class DistanceTo implements Comparable<DistanceTo> {
     private String target;
     private int distance;

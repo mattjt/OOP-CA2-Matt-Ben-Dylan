@@ -15,15 +15,16 @@ public class Question2  // Car Parking - Stack
         int carNumber;
 
         System.out.println("""
-                \u001B[36m
+                \u001B[94m
                 Driveway parking simulation
-                ---------------------------
+                -----------------------------
                 Commands:
                 Enter positive number to add input car no. - ('1' will add car no.1)
                 Enter negative number to remove input car no. - ('-1' will remove car no.1)
-                Enter 'quit' to exit simulation
                 Enter 'show-driveway' to show current driveway state
                 Enter 'show-street' to show current street state
+                Enter 'quit' to exit simulation
+                -----------------------------
                 \u001B[0m""");
 
         while (true) {
