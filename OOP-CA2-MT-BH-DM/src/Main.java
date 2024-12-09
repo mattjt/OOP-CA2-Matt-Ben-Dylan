@@ -17,11 +17,11 @@ public class Main {
         String input;
 
         while (true) {
-            System.out.println("Enter a number (1-11) to run question, or 'quit' to exit:");
+            System.out.println("\u001b[94mEnter a number (1-11) to run question, or 'quit' to exit:\u001b[0m");
             input = kb.nextLine().toLowerCase().trim();
 
             if (input.equals("quit")) {
-                System.out.println("Exiting program.");
+                System.out.println("\u001b[31mExiting program.\u001b[0m");
                 break;
             }
 
@@ -58,10 +58,10 @@ public class Main {
                         Question11.main(args);
                         break;
                     default:
-                        System.out.println("Error: Enter a number between 1 and 11");
+                        System.out.println("\u001b[31mError: Enter a number between 1 and 11\u001b[0m");
                 }
             } catch (Exception e) {
-                System.out.println("Error: Enter a valid number.");
+                System.out.println("\u001b[31mError: Enter a valid number.\u001b[0m");
             }
         }
     }
