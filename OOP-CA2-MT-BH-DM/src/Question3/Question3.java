@@ -46,7 +46,7 @@ filename: name of the file to test.
          tags_invalid.txt should output as invalid;
      */
     public static void main(String[] args) throws FileNotFoundException {
-        String[] files = {"tags_valid.txt", "tags_invalid.txt"};
+        String[] files = {"./OOP-CA2-MT-BH-DM/tags_valid.txt", "./OOP-CA2-MT-BH-DM/tags_invalid.txt"};
 
         for (String fName : files) {
             System.out.print(fName + ": ");
